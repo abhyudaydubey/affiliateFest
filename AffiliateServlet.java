@@ -14,6 +14,6 @@ public class ProductServlet extends HttpServlet {
             request.getSession().setAttribute("affiliate", affiliateId);
         }
 
-        response.getWriter().println("Showing product: " + productId);
+        response.getWriter().println("Showing product: " + productId); // this productId is wrong work on this next
     }
 }
