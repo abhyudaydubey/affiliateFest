@@ -11,7 +11,7 @@ public class PurchaseServlet extends HttpServlet {
 
         if (affiliateId != null) {
             double commission = amount * 0.10; // 10% commission
-            affiliateCommission.put(affiliateId, affiliateCommission.getOrDefault(affiliateId, 0.0) + commission);
+            affiliateCommission.put(affiliateId, affiliateCommission.getOrDefault(affiliateId, 0.0) + commission); // this line has some issues fix it
             response.getWriter().println("Affiliate " + affiliateId + " earned ₹" + commission);
         } else {
             response.getWriter().println("Purchase made without affiliate.");
