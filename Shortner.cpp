@@ -30,7 +30,7 @@ public:
     // Shorten the URL
     string shorten(string longUrl) {
         if (urlToCode.find(longUrl) != urlToCode.end()) {
-            return "short.ly/" + urlToCode[longUrl];
+            return "short.ly/" + urlToCode[longUrl]; // we need other domain
         }
 
         string code = generateCode();
