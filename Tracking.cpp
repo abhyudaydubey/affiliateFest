@@ -29,7 +29,7 @@ void makePurchase(const string& affiliateId, double amount) {
     double commission = amount * 0.10; // 10% commission
     affiliateCommission[affiliateId] += commission;
 
-    cout << "Affiliate " << affiliateId << " earned ₹" << commission << " on this purchase.\n";
+    cout << "Affiliate " << affiliateId << " earned ₹" << commission << " on this purchase.\n"; // redundant code found
 }
 
 void showReports() {
