@@ -4,7 +4,7 @@ public class AffiliateLinkGenerator {
     }
 
     public static void main(String[] args) {
-        String link = generateLink("https://yourapp.com", "123", "AFF001");
+        String link = generateLink("https://yourapp.com", "123", "AFF001"); // match the domain
         System.out.println("Affiliate Link: " + link);
     }
 }
